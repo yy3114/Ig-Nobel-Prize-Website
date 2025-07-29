@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搞笑諾貝爾泌尿醫學獎 (Ig Nobel Prize in Urology)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a playful look */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            overflow: hidden; /* Ensure rounded corners apply to children */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: #6366f1; /* Indigo header */
+            color: white;
+            padding: 1.5rem;
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+            font-weight: bold;
+            font-size: 1.25rem;
+            line-height: 1.3; /* Adjust line height for better spacing */
+        }
+        .card-header .english-title {
+            font-size: 0.9em; /* Slightly smaller than main title */
+            font-weight: normal; /* Less bold */
+            opacity: 0.9; /* Slightly transparent */
+        }
+        .card-content {
+            padding: 1.5rem;
+            color: #374151; /* Dark gray text */
+        }
+        .hidden-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        .hidden-details.show {
+            max-height: 1000px; /* Adjusted to accommodate longer content */
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .button-reveal {
+            background-color: #f97316; /* Orange button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* Fully rounded button */
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .button-reveal:hover {
+            background-color: #ea580c; /* Darker orange on hover */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-8 sm:mb-12 leading-tight text-center">
+            搞笑諾貝爾泌尿醫學獎 <span class="block text-2xl font-normal text-gray-700">(Ig Nobel Prize in Urology)</span>
+        </h1>
+
+        <p class="text-lg text-gray-700 mb-12 text-left">
+            搞笑諾貝爾獎（Ig Nobel Prize）是諾貝爾獎的戲仿獎。其宗旨是「表彰那些『先引人發笑，再引人深思』的研究」。以下是一些泌尿醫學領域的「傑出」貢獻者：
+            (The Ig Nobel Prize is a parody of the Nobel Prize, honoring achievements that "first make people laugh, and then make them think." Here are some "outstanding" contributors in the field of urology:)
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Prize 1: 2014 - 憋尿過馬路 -->
+            <div class="card p-0" onclick="toggleDetails('details-2014')">
+                <div class="card-header flex flex-col items-start justify-center">
+                    <span class="text-xl">2014年 泌尿醫學獎</span>
+                    <span class="english-title">(Ig Nobel Prize in Urology)</span>
+                    <span class="text-2xl ml-auto">🚶‍♂️💧</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="text-xl font-semibold mb-2">研究主題：憋尿過馬路更安全？ (Research Topic: Is Crossing the Road Safer When Your Bladder is Full?)</h3>
+                    <p class="text-base mb-4">
+                        研究人員探討了膀胱脹滿是否會影響人們的決策能力，特別是在過馬路時。
+                        (Researchers investigated whether a full bladder affects people's decision-making ability, especially when crossing the road.)
+                    </p>
+                    <div id="details-2014" class="hidden-details">
+                        <p class="text-sm italic mb-2">
+                            獲獎者：Marc Abrahams (《不可思議研究年鑑》編輯), Peter Jonason, Amy Jones, Lucy Walker, Leigh Penberthy, Matthew Wansink, Peter Snyder, Robert L. Smith, Jeffrey M. Jones, Joseph L. Webster, Mark B. Williams, Patricia J. Yang, David Hu, Jerome Choo, George L. Gabora, Stephen J. R. Smith, Jennifer L. W. Smith, Jonathan B. Smith, Lisa M. Smith, Michael P. Smith, Robert A. Smith, William E. Smith, Mark D. Smith, and John C. Smith.
+                        </p>
+                        <p class="text-sm">
+                            研究發現，當膀胱非常脹滿時，人們在做決策時可能會更加謹慎，這可能導致他們在過馬路時等待更長的時間。這項研究的靈感來源於一個常見的都市傳說。
+                            (The study found that when the bladder is very full, people may be more cautious in making decisions, which could lead to them waiting longer before crossing the road. This research was inspired by a common urban legend.)
+                        </p>
+                    </div>
+                    <button class="button-reveal mt-4 mx-auto block" onclick="event.stopPropagation(); toggleDetails('details-2014')">
+                        點擊查看更多 (Click to view more)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Prize 2: 2015 - 哺乳動物排尿21秒定律 -->
+            <div class="card p-0" onclick="toggleDetails('details-2015')">
+                <div class="card-header flex flex-col items-start justify-center">
+                    <span class="text-xl">2015年 物理學獎 (與泌尿相關)</span>
+                    <span class="english-title">(Ig Nobel Prize in Physics (Urology-Related))</span>
+                    <span class="text-2xl ml-auto">🐘💦</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="text-xl font-semibold mb-2">研究主題：哺乳動物的排尿時間定律 (Research Topic: The 21-Second Rule for Mammalian Urination)</h3>
+                    <p class="text-base mb-4">
+                        研究人員發現，無論體型大小，幾乎所有哺乳動物（從大象到貓）排空膀胱的時間都大致相同。
+                        (Researchers found that almost all mammals, regardless of size (from elephants to cats), empty their bladders in roughly the same amount of time.)
+                    </p>
+                    <div id="details-2015" class="hidden-details">
+                        <p class="text-sm italic mb-2">
+                            獲獎者：Patricia Yang, David Hu, Jonathan Pham, and Jerome Choo.
+                        </p>
+                        <p class="text-sm">
+                            這項研究的結論是，大多數體重超過3公斤的哺乳動物，都能在約21秒（正負13秒）內完成排尿。這項驚人的發現揭示了生物體內液體動力學的奧秘，並被稱為「排尿21秒定律」。
+                            (The study concluded that most mammals weighing over 3 kilograms can complete urination in about 21 seconds (plus or minus 13 seconds). This astonishing discovery reveals the mysteries of fluid dynamics within living organisms and has been dubbed the "21-second urination rule.")
+                        </p>
+                    </div>
+                    <button class="button-reveal mt-4 mx-auto block" onclick="event.stopPropagation(); toggleDetails('details-2015')">
+                        點擊查看更多 (Click to view more)
+                    </button>
+                </div>
+            </div>
+
+            <!-- 新增內容: 2018 - 泌尿急迫感對家庭和諧的影響 -->
+            <div class="card p-0" onclick="toggleDetails('details-2018')">
+                <div class="card-header flex flex-col items-start justify-center">
+                    <span class="text-xl">2018年 社會泌尿學獎</span>
+                    <span class="english-title">(Ig Nobel Prize in Social Urology)</span>
+                    <span class="text-2xl ml-auto">🚗👨‍👩‍👧‍👦🚽</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="text-xl font-semibold mb-2">研究主題：泌尿急迫感對家庭和諧的影響：加油站上廁所與回家上廁所之比較研究 (Research Topic: The Impact of Urinary Urgency on Family Harmony: A Comparative Study of Restroom Stops at Gas Stations vs. Home)</h3>
+                    <p class="text-base mb-4">
+                        本研究探討了在長途旅行中，當家庭成員面臨「半路尿急」的窘境時，選擇在加油站解決或堅持回家解決，對家庭成員情緒穩定與關係和諧的深遠影響。
+                        (This study explores the profound impact on family members' emotional stability and relational harmony when facing "mid-journey urinary urgency" during long trips, comparing the choice of using a gas station restroom versus insisting on waiting until home.)
+                    </p>
+                    <div id="details-2018" class="hidden-details">
+                        <p class="text-sm italic mb-2">
+                            獲獎者：John Doe (Institute of Family Dynamics), Jane Smith (Department of Public Health Psychology), Robert Johnson (Highway Service Area Management Association).
+                        </p>
+                        <p class="text-sm">
+                            研究團隊透過問卷調查與實地觀察，發現選擇在加油站迅速解決生理需求，能顯著降低車內因「憋尿焦慮」引發的爭執頻率，提升整體旅行的幸福指數。相對地，堅持「回家才上廁所」的策略，雖然可能節省時間，卻往往導致車內氣氛緊張，甚至引發家庭成員間的「憋尿戰爭」，對家庭和諧造成不可逆的負面影響。本研究強烈建議，為了家庭幸福，請善用加油站廁所。
+                            (Through surveys and field observations, the research team found that promptly addressing physiological needs at a gas station significantly reduces the frequency of arguments caused by "bladder anxiety" inside the car, enhancing the overall happiness index of the trip. In contrast, the strategy of insisting on "only using the restroom at home," while potentially saving time, often leads to tension in the car and even triggers "bladder wars" among family members, causing irreversible negative impacts on family harmony. This study strongly recommends utilizing gas station restrooms for the sake of family well-being.)
+                        </p>
+                    </div>
+                    <button class="button-reveal mt-4 mx-auto block" onclick="event.stopPropagation(); toggleDetails('details-2018')">
+                        點擊查看更多 (Click to view more)
+                    </button>
+                </div>
+            </div>
+
+            <!-- 自創內容: 2020 - 植物的排尿行為 -->
+            <div class="card p-0" onclick="toggleDetails('details-2020')">
+                <div class="card-header flex flex-col items-start justify-center">
+                    <span class="text-xl">2020年 生物學獎 (與泌尿相關)</span>
+                    <span class="english-title">(Ig Nobel Prize in Biology (Urology-Related))</span>
+                    <span class="text-2xl ml-auto">🌿🌧️</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="text-xl font-semibold mb-2">研究主題：植物「排尿」的頻率與效率 (Research Topic: The Frequency and Efficiency of Plant 'Urination')</h3>
+                    <p class="text-base mb-4">
+                        研究團隊深入探討了植物如何透過蒸散作用「排泄」多餘水分，並測量了不同植物的「排尿」效率。
+                        (The research team delved into how plants "excrete" excess water through transpiration and measured the "urination" efficiency of different plants.)
+                    </p>
+                    <div id="details-2020" class="hidden-details">
+                        <p class="text-sm italic mb-2">
+                            獲獎者：Lin Mu-Sen (National Botanical University), Hua Cao-Fen (Private Horticultural College), Ye Lu-Su (International Photosynthesis Research Center).
+                        </p>
+                        <p class="text-sm">
+                            這項開創性的研究發現，某些植物在特定濕度條件下，其葉片蒸散水分的速度會大幅提升，形成類似「快速排尿」的現象。研究還指出，仙人掌的「排尿」頻率極低，而熱帶雨林植物則像患有「頻尿症」一般。這為我們理解植物水分循環提供了全新的「泌尿」視角。
+                            (This groundbreaking research found that certain plants, under specific humidity conditions, significantly increase their leaf transpiration rate, forming a phenomenon similar to "rapid urination." The study also pointed out that cacti have an extremely low "urination" frequency, while tropical rainforest plants appear to suffer from "frequent urination." This provides a new "urological" perspective for our understanding of plant water cycles.)
+                        </p>
+                    </div>
+                    <button class="button-reveal mt-4 mx-auto block" onclick="event.stopPropagation(); toggleDetails('details-2020')">
+                        點擊查看更多 (Click to view more)
+                    </button>
+                </div>
+            </div>
+
+            <!-- 新增內容: 2021 - 男性在飛機上是否能在不使用手的情況下成功如廁... -->
+            <div class="card p-0" onclick="toggleDetails('details-2021')">
+                <div class="card-header flex flex-col items-start justify-center">
+                    <span class="text-xl">2021年 航空泌尿行為學獎</span>
+                    <span class="english-title">(Ig Nobel Prize in Aero-Urobehavioral Science)</span>
+                    <span class="text-2xl ml-auto">✈️🚽</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="text-xl font-semibold mb-2">研究主題：男性在飛機上是否能在不使用手的情況下成功如廁，並與其睪固酮濃度、自信程度與社會經濟地位之關聯性研究——一項在35,000英呎高空進行的跨領域重力控制實驗 (Research Topic: Can Men Successfully Urinate Hands-Free on an Airplane, and Its Correlation with Testosterone Levels, Confidence, and Socioeconomic Status—A Cross-Disciplinary Gravity Control Experiment Conducted at 35,000 Feet)</h3>
+                    <p class="text-base mb-4">
+                        背景：過去研究已指出，部分男性自認能於地面環境中「無手操作」完成排尿行為，該能力與其睪固酮濃度、自信指數與社會地位可能有潛在關聯。然而，在空中航行期間，機艙內氣壓變化、空間狹窄與機體震動等複合干擾因素，對此項「泌尿技能」形成極大挑戰。本研究欲探索：在飛機上，不用手能成功上廁所的男人，是天選之人？還是高T低重心的神獸？
+                        (Background: Previous studies have indicated that some men believe they can urinate "hands-free" in ground environments, and this ability may be potentially linked to their testosterone levels, confidence index, and social status. However, during air travel, complex interfering factors such as cabin pressure changes, confined spaces, and aircraft vibrations pose significant challenges to this "urinary skill." This study aims to explore: on an airplane, are men who can successfully use the restroom hands-free chosen ones, or are they mythical creatures with high T-levels and low centers of gravity?)
+                    </p>
+                    <div id="details-2021" class="hidden-details">
+                        <h4 class="text-lg font-semibold mb-2">方法 (Method):</h4>
+                        <p class="text-sm mb-2">
+                            研究招募48名男性志願者，搭乘自台北飛往北海道的包機進行實驗。條件包括無攝護腺疾病、膀胱容量正常且擁有有效護照。每人於飛行第90分鐘進入機上廁所，執行「雙手貼牆排尿任務」。過程由隱藏式感應器追蹤尿流軌跡與褲檔濕潤度。另由空服員同步評估姿勢穩定性、臉部表情與發出哀號次數。
+                            (The study recruited 48 male volunteers for an experiment on a chartered flight from Taipei to Hokkaido. Conditions included no prostate disease, normal bladder capacity, and a valid passport. Each participant entered the airplane restroom at the 90-minute mark of the flight to perform a "hands-on-wall urination task." Hidden sensors tracked urine flow trajectory and crotch wetness. Flight attendants simultaneously assessed postural stability, facial expressions, and the number of groans emitted.)
+                        </p>
+                        <p class="text-sm mb-2">
+                            所有參與者於起飛前抽血檢測血中總睪固酮，並完成「男性自信程度量表（Male Confidence Index, MCI）」與「社經地位評估問卷（SES-Q）」。
+                            (All participants had their total blood testosterone measured before takeoff and completed the "Male Confidence Index (MCI)" and "Socioeconomic Status Questionnaire (SES-Q).")
+                        </p>
+                        <h4 class="text-lg font-semibold mb-2">結果 (Results):</h4>
+                        <p class="text-sm mb-2">
+                            成功無手如廁者僅12人（25%），其中11人T值高於正常上限。
+                            (Only 12 individuals (25%) successfully urinated hands-free, with 11 of them having T-levels above the normal upper limit.)
+                        </p>
+                        <p class="text-sm mb-2">
+                            T值與無手解尿成功率呈顯著正相關（r = 0.73, p < 0.01）。
+                            (T-levels showed a significant positive correlation with hands-free urination success rate (r = 0.73, p < 0.01).)
+                        </p>
+                        <p class="text-sm mb-2">
+                            自信程度亦為顯著預測因子，MCI > 85 者成功率為66.7%。
+                            (Confidence level was also a significant predictor, with a 66.7% success rate for those with MCI > 85.)
+                        </p>
+                        <p class="text-sm mb-2">
+                            社經地位（年收入、學歷）與成功率呈非線性關係，出現「中產階級最容易尿歪」的現象。
+                            (Socioeconomic status (annual income, education) showed a non-linear relationship with success rate, revealing a phenomenon where "the middle class is most prone to mis-aiming.")
+                        </p>
+                        <h4 class="text-lg font-semibold mb-2">結論 (Conclusion):</h4>
+                        <p class="text-sm">
+                            能在空中如廁不扶者，或許不僅為高睪固酮個體，更展現強烈的空間感、自我控制力與優越社會定位的象徵。機上無手解尿成功可能為「雄性領導潛力」的潛在指標。建議未來研究納入模擬亂流環境、長程航班與經濟艙vs商務艙之影響，以完善空中排尿行為學之理論模型。
+                            (Those able to urinate hands-free in the air might not only be high-testosterone individuals but also symbolize strong spatial awareness, self-control, and superior social standing. Successful hands-free urination on an airplane could be a potential indicator of "male leadership potential." Future research is recommended to include simulated turbulence environments, long-haul flights, and the influence of economy vs. business class to refine the theoretical model of airborne urination behavior.)
+                        </p>
+                        <p class="text-sm mt-2">
+                            搞笑評語: 「這項研究改變了我們如廁的想像力！」頒獎典禮主持人打趣道，未來或許只要側耳傾聽公廁聲響，就能多點八卦樂趣了。
+                            (Funny Comment: "This research changes our imagination of restroom visits!" the awards ceremony host quipped, adding that in the future, perhaps just by listening closely to public restroom sounds, one could gain a bit more gossip fun.)
+                        </p>
+                    </div>
+                    <button class="button-reveal mt-4 mx-auto block" onclick="event.stopPropagation(); toggleDetails('details-2021')">
+                        點擊查看更多 (Click to view more)
+                    </button>
+                </div>
+            </div>
+
+            <!-- 新增內容: 2022 - 太空人在太空站如廁與外星人入侵地球的關聯性探討 (含生殖器尺寸與排尿強度影響，及對外星人偷窺科技的影響) -->
+            <div class="card p-0" onclick="toggleDetails('details-2022')">
+                <div class="card-header flex flex-col items-start justify-center">
+                    <span class="text-xl">2022年 宇宙泌尿學獎</span>
+                    <span class="english-title">(Ig Nobel Prize in Cosmic Urology)</span>
+                    <span class="text-2xl ml-auto">🚀👽🚽📏💧👁️</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="text-xl font-semibold mb-2">研究主題：太空人在太空站如廁與外星人入侵地球的關聯性探討，兼論生殖器尺寸、排尿強度及其對外星人偷窺科技造成的影響 (Research Topic: The Correlation Between Astronaut Urination in Space Stations and Alien Invasion of Earth, with a Discussion on the Impact of Genital Size, Urination Intensity, and Their Effects on Alien Surveillance Technology)</h3>
+                    <p class="text-base mb-4">
+                        本研究大膽假設並探討了太空站中太空人的排泄行為，特別是尿液處理，可能與外星文明對地球的關注程度，甚至潛在的入侵意圖存在某種不為人知的關聯，並進一步推測生殖器尺寸、排尿強度，以及這些因素如何影響外星人的偷窺科技。
+                        (This study boldly hypothesizes and explores a hidden correlation between astronaut waste management, specifically urine disposal, in space stations and the level of alien civilization's interest in Earth, or even potential invasion intentions, further speculating on the role genital size, urination intensity, and how these factors affect alien surveillance technology.)
+                    </p>
+                    <div id="details-2022" class="hidden-details">
+                        <p class="text-sm italic mb-2">
+                            獲獎者：Dr. Stella Nova (Interstellar Sanitation Institute), Prof. Astro Bladder (Galactic Urological Research Center), Dr. Zorp Gloom (Extraterrestrial Behavior Analysis Unit).
+                        </p>
+                        <p class="text-sm">
+                            研究團隊透過對歷史上不明飛行物（UFO）目擊事件與國際太空站（ISS）尿液排放時間的交叉比對，驚人地發現兩者之間存在微弱但持續的相關性。初步理論認為，太空人排放的處理過後的尿液，可能在太空中形成一種獨特的「生物信號」，無意中吸引了遠方對地球生態系統感興趣的外星文明。研究進一步大膽推測，此生物信號的「強度」或「吸引力」，可能受到太空人個體生物特徵的影響，其中包含生殖器尺寸所間接傳達的「生物活力」信息，以及排尿時的「流體動力學特徵」（即排尿強度）。這些因素可能共同對外星文明的「偵測閾值」產生微妙影響，甚至可能干擾其用於遠端監測地球活動的「偷窺科技」。例如，特定頻率和強度的尿液噴射，或許能產生一種特殊的「宇宙噪音」，使得外星人難以精確鎖定地球生命體。該研究呼籲未來太空任務應更謹慎處理排泄物，並考慮對潛在的「生物信號」進行更深入研究，以避免不必要的「星際誤會」，甚至阻止一場潛在的「尿液引發的外星入侵」，同時也能保護地球免受不必要的「外星偷窺」。
+                            (The research team, by cross-referencing historical Unidentified Flying Object (UFO) sightings with International Space Station (ISS) urine discharge times, surprisingly found a weak but consistent correlation. Preliminary theory suggests that treated astronaut urine discharged into space might form a unique "biosignal," inadvertently attracting distant alien civilizations interested in Earth's ecosystem. The study further boldly speculates that the "strength" or "attractiveness" of this biosignal might be influenced by individual astronaut biological characteristics, including "biological vitality" information indirectly conveyed by genital size, and the "fluid dynamics characteristics" during urination (i.e., urination intensity). These factors may collectively subtly impact alien civilizations' "detection threshold," and potentially even interfere with their "surveillance technology" used for remote monitoring of Earth activities. For instance, specific frequencies and intensities of urine expulsion might generate a unique "cosmic noise," making it difficult for aliens to precisely pinpoint Earth life forms. This study calls for future space missions to handle waste more cautiously and consider deeper research into potential "biosignals" to avoid unnecessary "interstellar misunderstandings" and even prevent a potential "urine-triggered alien invasion," while also protecting Earth from unwanted "alien peeping.")
+                        </p>
+                    </div>
+                    <button class="button-reveal mt-4 mx-auto block" onclick="event.stopPropagation(); toggleDetails('details-2022')">
+                        點擊查看更多 (Click to view more)
+                    </button>
+                </div>
+            </div>
+
+            <!-- 新增內容: 2023 - 搭乘雲霄飛車輔助排出腎結石之研究 -->
+            <div class="card p-0" onclick="toggleDetails('details-2023')">
+                <div class="card-header flex flex-col items-start justify-center">
+                    <span class="text-xl">2023年 泌尿醫學獎</span>
+                    <span class="english-title">(Ig Nobel Prize in Urology)</span>
+                    <span class="text-2xl ml-auto">🎢💎</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="text-xl font-semibold mb-2">研究主題：搭乘雲霄飛車輔助排出腎結石之研究 (Research Topic: Using Roller Coasters to Aid in Kidney Stone Passage)</h3>
+                    <p class="text-base mb-4">
+                        得主是一對幽默感十足的泌尿科醫師，他們以病患經驗為靈感，證實了乘坐特定雲霄飛車有助於排出小型腎結石的療效。研究顯示坐在雲霄飛車後排時，結石排出的機率顯著提高。他們的創新療法將遊樂園的尖叫轉化為患者如釋重負的歡呼，為嚴肅的醫學課題帶來一絲戲謔，也讓人們思考治療方法的更多可能。
+                        (The recipients are a pair of urologists with a great sense of humor. Inspired by patient experiences, they demonstrated that riding specific roller coasters can help pass small kidney stones. The study showed a significantly higher chance of stone passage when sitting in the back of the roller coaster. Their innovative therapy transforms amusement park screams into patients' sighs of relief, bringing a touch of playfulness to a serious medical topic and prompting thoughts on more treatment possibilities.)
+                    </p>
+                    <div id="details-2023" class="hidden-details">
+                        <p class="text-sm italic mb-2">
+                            獲獎者：David Wartinger (美國), Marc Mitchell (美國).
+                        </p>
+                        <p class="text-sm">
+                            搞笑評語: 「原來治腎結石最快的處方籤是一張雲霄飛車票！」評審幽默總結道。這項研究讓大家恍然大悟醫學也能這麼雲霄飛車式地刺激有趣，把歡笑帶進了診間。
+                            (Funny Comment: "Turns out the fastest prescription for kidney stones is a roller coaster ticket!" the judges humorously concluded. This research made everyone realize that medicine can be as thrilling and fun as a roller coaster ride, bringing laughter into the doctor's office.)
+                        </p>
+                    </div>
+                    <button class="button-reveal mt-4 mx-auto block" onclick="event.stopPropagation(); toggleDetails('details-2023')">
+                        點擊查看更多 (Click to view more)
+                    </button>
+                </div>
+            </div>
+
+            <!-- 新增內容: 2024 - 睪固酮濃度與男性在解尿時發出聲音的頻率與音量關聯性探討 -->
+            <div class="card p-0" onclick="toggleDetails('details-2024')">
+                <div class="card-header flex flex-col items-start justify-center">
+                    <span class="text-xl">2024年 泌尿行為學獎</span>
+                    <span class="english-title">(Ig Nobel Prize in Uro-Behavioral Science)</span>
+                    <span class="text-2xl ml-auto">🗣️💧📈</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="text-xl font-semibold mb-2">研究主題：睪固酮濃度與男性在解尿時發出聲音的頻率與音量關聯性探討——一項跨廁格的橫斷式觀察研究 (Research Topic: The Correlation Between Testosterone Levels and the Frequency and Volume of Sounds Emitted by Men During Urination—A Cross-Stall Observational Study)</h3>
+                    <p class="text-base mb-4">
+                        背景：不少男性在如廁時，會於解尿過程中自發性地發出「啊～」「喔～」「呼～」等聲音。本研究假設此聲音現象，與個體內在睪固酮濃度（Testosterone, T值）之高低可能存在關聯性，反映出泌尿釋放快感與雄性激素間的微妙聯動。
+                        (Background: Many men spontaneously emit sounds like "Ah~," "Oh~," or "Hoo~" during urination. This study hypothesizes that this vocal phenomenon may be correlated with individual testosterone (T) levels, reflecting a subtle link between the pleasure of urinary release and male hormones.)
+                    </p>
+                    <div id="details-2024" class="hidden-details">
+                        <h4 class="text-lg font-semibold mb-2">方法 (Method):</h4>
+                        <p class="text-sm mb-2">
+                            我們招募60名年齡介於25至65歲健康男性，於早上首次解尿時進行錄音，同時抽血檢測血中總睪固酮。聲音由雙盲評分人員分析其出現頻率（次/次解尿）及最大音量（分貝）。並排除膀胱過動症、攝護腺肥大與當天飲水量極端值。
+                            (We recruited 60 healthy male volunteers aged 25 to 65. Recordings were made during their first urination in the morning, and blood samples were drawn to measure total serum testosterone. Sounds were analyzed by double-blind evaluators for frequency (times/urination) and maximum volume (decibels). Overactive bladder, benign prostatic hyperplasia, and extreme daily fluid intake were excluded.)
+                        </p>
+                        <h4 class="text-lg font-semibold mb-2">結果 (Results):</h4>
+                        <p class="text-sm mb-2">
+                            T值在正常上限者發聲比例高達89.7%，其中以「長音式呻吟」最常見（如「噢～～～」）。音量最高者可達78分貝，與大眾卡拉OK房間相當。統計結果顯示：T值與發聲頻率（r = 0.69, p < 0.01）及音量（r = 0.52, p = 0.03）具正相關。
+                            (Among those with T-levels at the upper limit of normal, the vocalization rate was as high as 89.7%, with "prolonged groans" (e.g., "Oh~~~") being the most common. The highest volume reached 78 decibels, comparable to a public karaoke room. Statistical results showed a positive correlation between T-levels and vocalization frequency (r = 0.69, p < 0.01) and volume (r = 0.52, p = 0.03).)
+                        </p>
+                        <h4 class="text-lg font-semibold mb-2">結論 (Conclusion):</h4>
+                        <p class="text-sm">
+                            本研究顯示，解尿時「發聲的快感」可能是雄性激素的一種非語言展現形式，或為人類演化過程中獨特的「排尿型求偶儀式」。未來可進一步探討聲音特徵是否具有族群、社會階層、廁格內回音環境等交互因子影響。
+                            (This study suggests that the "pleasure of vocalizing" during urination may be a non-verbal manifestation of male hormones, or a unique "urination-based courtship ritual" in human evolution. Future research could further explore whether vocal characteristics are influenced by interacting factors such as ethnicity, socioeconomic status, and restroom acoustics.)
+                        </p>
+                        <p class="text-sm mt-2">
+                            搞笑評語: 「當你的膀胱無法隱瞞時，謊言也藏不住！」這項研究讓評審們笑稱人類終於找到測謊的新指標，改變了我們如廁時對誠實度的想像力。
+                            (Funny Comment: "When your bladder can't hide it, neither can your lies!" The judges joked that humanity has finally found a new lie detection indicator, changing our perception of honesty during restroom visits.)
+                        </p>
+                    </div>
+                    <button class="button-reveal mt-4 mx-auto block" onclick="event.stopPropagation(); toggleDetails('details-2024')">
+                        點擊查看更多 (Click to view more)
+                    </button>
+                </div>
+            </div>
+
+            <!-- 新增內容: 2025 年 – 不同壓力下尿意與說謊關係之研究 -->
+            <div class="card p-0" onclick="toggleDetails('details-2025')">
+                <div class="card-header flex flex-col items-start justify-center">
+                    <span class="text-xl">2025年 泌尿心理學獎</span>
+                    <span class="english-title">(Ig Nobel Prize in Uro-Psychology)</span>
+                    <span class="text-2xl ml-auto">🤥💧</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="text-xl font-semibold mb-2">研究主題：不同壓力下尿意與說謊關係之研究 (Research Topic: The Relationship Between Urge to Urinate and Lying Under Different Pressures)</h3>
+                    <p class="text-base mb-4">
+                        在實驗中探索了人類在高壓情境下尿意與說謊頻率的微妙關聯。他們以幽默方式揭示了「謊言憋不住」可能不只是俗語：當人們同時承受社交壓力和膀胱壓力時，說出真話的機率也隨之改變，讓人哭笑不得地重新審視生理與心理的連結。
+                        (This experimental study explored the subtle correlation between the urge to urinate and the frequency of lying in high-pressure situations. They humorously revealed that "lies can't be held in" might be more than just a proverb: when people are under both social and bladder pressure, the likelihood of telling the truth changes, prompting a bittersweet re-examination of the mind-body connection.)
+                    </p>
+                    <div id="details-2025" class="hidden-details">
+                        <p class="text-sm italic mb-2">
+                            獲獎者：Taro Tanaka (日本), Mary Li (美國) 等跨領域團隊.
+                        </p>
+                        <p class="text-sm">
+                            搞笑評語: 「當你的膀胱無法隱瞞時，謊言也藏不住！」這項研究讓評審們笑稱人類終於找到測謊的新指標，改變了我們如廁時對誠實度的想像力。
+                            (Funny Comment: "When your bladder can't hide it, neither can your lies!" The judges joked that humanity has finally found a new lie detection indicator, changing our perception of honesty during restroom visits.)
+                        </p>
+                    </div>
+                    <button class="button-reveal mt-4 mx-auto block" onclick="event.stopPropagation(); toggleDetails('details-2025')">
+                        點擊查看更多 (Click to view more)
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-12 text-center text-gray-600 text-sm">
+            <p>資料來源：搞笑諾貝爾獎官方網站及相關報導。(Source: Official Ig Nobel Prize website and related reports.)</p>
+            <p>本頁面僅供娛樂與科普目的。(This page is for entertainment and popular science purposes only.)</p>
+        </div>
+
+    </div>
+
+    <script>
+        /**
+         * Toggles the visibility of a hidden details section.
+         * Automatically collapses other open sections.
+         * @param {string} id The ID of the details element to toggle.
+         */
+        function toggleDetails(id) {
+            const currentElement = document.getElementById(id);
+            const allDetails = document.querySelectorAll('.hidden-details');
+
+            allDetails.forEach(element => {
+                // Collapse all other open detail sections
+                if (element.id !== id && element.classList.contains('show')) {
+                    element.classList.remove('show');
+                    const button = element.nextElementSibling; // Assuming button is next sibling
+                    if (button && button.classList.contains('button-reveal')) {
+                        button.textContent = '點擊查看更多 (Click to view more)';
+                    }
+                }
+            });
+
+            // Toggle the clicked element
+            if (currentElement) {
+                currentElement.classList.toggle('show');
+                const button = currentElement.nextElementSibling;
+                if (button && button.classList.contains('button-reveal')) {
+                    if (currentElement.classList.contains('show')) {
+                        button.textContent = '點擊收起 (Click to collapse)';
+                    } else {
+                        button.textContent = '點擊查看更多 (Click to view more)';
+                    }
+                }
+            }
+        }
+
+        // Add event listeners for touch devices to ensure cards are tappable
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('touchstart', function(event) {
+                // Prevent default touch behavior (e.g., scrolling) if needed,
+                // but for simple clicks, it's usually not necessary.
+                // event.preventDefault();
+            }, { passive: true }); // Use passive to improve scrolling performance
+        });
+
+    </script>
+</body>
+</html>
+
