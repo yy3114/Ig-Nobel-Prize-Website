@@ -32,11 +32,28 @@
             font-weight: bold;
             font-size: 1.25rem;
             line-height: 1.3; /* Adjust line height for better spacing */
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Vertically center items */
+            flex-wrap: nowrap; /* Prevent wrapping in header to keep icon/title/emoji on one line */
+        }
+        .card-header .title-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1; /* Allow title group to take available space */
+            margin-left: 0.75rem; /* Increased space between icon and title text */
         }
         .card-header .english-title {
             font-size: 0.9em; /* Slightly smaller than main title */
             font-weight: normal; /* Less bold */
             opacity: 0.9; /* Slightly transparent */
+        }
+        .card-header .icon {
+            width: 3rem; /* Increased icon size */
+            height: 3rem;
+            flex-shrink: 0; /* Prevent icon from shrinking */
+            object-fit: contain; /* Ensure image fits without distortion */
+            border-radius: 0.25rem; /* Slightly rounded corners for the image */
         }
         .card-content {
             padding: 1.5rem;
@@ -82,9 +99,12 @@
 
             <!-- Prize 1: 2014 - 憋尿過馬路 -->
             <div class="card p-0" onclick="toggleDetails('details-2014')">
-                <div class="card-header flex flex-col items-start justify-center">
-                    <span class="text-xl">2014年 泌尿醫學獎</span>
-                    <span class="english-title">(Ig Nobel Prize in Urology)</span>
+                <div class="card-header">
+                    <img src="https://i.postimg.cc/K8zHDYk5/1753713347019.png" alt="泌尿醫學獎章" class="icon">
+                    <div class="title-group">
+                        <span class="text-xl">2014年 泌尿醫學獎</span>
+                        <span class="english-title">(Ig Nobel Prize in Urology)</span>
+                    </div>
                     <span class="text-2xl ml-auto">🚶‍♂️💧</span>
                 </div>
                 <div class="card-content">
@@ -110,9 +130,12 @@
 
             <!-- Prize 2: 2015 - 哺乳動物排尿21秒定律 -->
             <div class="card p-0" onclick="toggleDetails('details-2015')">
-                <div class="card-header flex flex-col items-start justify-center">
-                    <span class="text-xl">2015年 物理學獎 (與泌尿相關)</span>
-                    <span class="english-title">(Ig Nobel Prize in Physics (Urology-Related))</span>
+                <div class="card-header">
+                    <img src="https://i.postimg.cc/K8zHDYk5/1753713347019.png" alt="泌尿醫學獎章" class="icon">
+                    <div class="title-group">
+                        <span class="text-xl">2015年 物理學獎 (與泌尿相關)</span>
+                        <span class="english-title">(Ig Nobel Prize in Physics (Urology-Related))</span>
+                    </div>
                     <span class="text-2xl ml-auto">🐘💦</span>
                 </div>
                 <div class="card-content">
@@ -138,9 +161,12 @@
 
             <!-- 新增內容: 2018 - 泌尿急迫感對家庭和諧的影響 -->
             <div class="card p-0" onclick="toggleDetails('details-2018')">
-                <div class="card-header flex flex-col items-start justify-center">
-                    <span class="text-xl">2018年 社會泌尿學獎</span>
-                    <span class="english-title">(Ig Nobel Prize in Social Urology)</span>
+                <div class="card-header">
+                    <img src="https://i.postimg.cc/K8zHDYk5/1753713347019.png" alt="泌尿醫學獎章" class="icon">
+                    <div class="title-group">
+                        <span class="text-xl">2018年 社會泌尿學獎</span>
+                        <span class="english-title">(Ig Nobel Prize in Social Urology)</span>
+                    </div>
                     <span class="text-2xl ml-auto">🚗👨‍👩‍👧‍👦🚽</span>
                 </div>
                 <div class="card-content">
@@ -166,9 +192,12 @@
 
             <!-- 自創內容: 2020 - 植物的排尿行為 -->
             <div class="card p-0" onclick="toggleDetails('details-2020')">
-                <div class="card-header flex flex-col items-start justify-center">
-                    <span class="text-xl">2020年 生物學獎 (與泌尿相關)</span>
-                    <span class="english-title">(Ig Nobel Prize in Biology (Urology-Related))</span>
+                <div class="card-header">
+                    <img src="https://i.postimg.cc/K8zHDYk5/1753713347019.png" alt="泌尿醫學獎章" class="icon">
+                    <div class="title-group">
+                        <span class="text-xl">2020年 生物學獎 (與泌尿相關)</span>
+                        <span class="english-title">(Ig Nobel Prize in Biology (Urology-Related))</span>
+                    </div>
                     <span class="text-2xl ml-auto">🌿🌧️</span>
                 </div>
                 <div class="card-content">
@@ -194,9 +223,12 @@
 
             <!-- 新增內容: 2021 - 男性在飛機上是否能在不使用手的情況下成功如廁... -->
             <div class="card p-0" onclick="toggleDetails('details-2021')">
-                <div class="card-header flex flex-col items-start justify-center">
-                    <span class="text-xl">2021年 航空泌尿行為學獎</span>
-                    <span class="english-title">(Ig Nobel Prize in Aero-Urobehavioral Science)</span>
+                <div class="card-header">
+                    <img src="https://i.postimg.cc/K8zHDYk5/1753713347019.png" alt="泌尿醫學獎章" class="icon">
+                    <div class="title-group">
+                        <span class="text-xl">2021年 航空泌尿行為學獎</span>
+                        <span class="english-title">(Ig Nobel Prize in Aero-Urobehavioral Science)</span>
+                    </div>
                     <span class="text-2xl ml-auto">✈️🚽</span>
                 </div>
                 <div class="card-content">
@@ -250,9 +282,12 @@
 
             <!-- 新增內容: 2022 - 太空人在太空站如廁與外星人入侵地球的關聯性探討 (含生殖器尺寸與排尿強度影響，及對外星人偷窺科技的影響) -->
             <div class="card p-0" onclick="toggleDetails('details-2022')">
-                <div class="card-header flex flex-col items-start justify-center">
-                    <span class="text-xl">2022年 宇宙泌尿學獎</span>
-                    <span class="english-title">(Ig Nobel Prize in Cosmic Urology)</span>
+                <div class="card-header">
+                    <img src="https://i.postimg.cc/K8zHDYk5/1753713347019.png" alt="泌尿醫學獎章" class="icon">
+                    <div class="title-group">
+                        <span class="text-xl">2022年 宇宙泌尿學獎</span>
+                        <span class="english-title">(Ig Nobel Prize in Cosmic Urology)</span>
+                    </div>
                     <span class="text-2xl ml-auto">🚀👽🚽📏💧👁️</span>
                 </div>
                 <div class="card-content">
@@ -278,9 +313,12 @@
 
             <!-- 新增內容: 2023 - 搭乘雲霄飛車輔助排出腎結石之研究 -->
             <div class="card p-0" onclick="toggleDetails('details-2023')">
-                <div class="card-header flex flex-col items-start justify-center">
-                    <span class="text-xl">2023年 泌尿醫學獎</span>
-                    <span class="english-title">(Ig Nobel Prize in Urology)</span>
+                <div class="card-header">
+                    <img src="https://i.postimg.cc/K8zHDYk5/1753713347019.png" alt="泌尿醫學獎章" class="icon">
+                    <div class="title-group">
+                        <span class="text-xl">2023年 泌尿醫學獎</span>
+                        <span class="english-title">(Ig Nobel Prize in Urology)</span>
+                    </div>
                     <span class="text-2xl ml-auto">🎢💎</span>
                 </div>
                 <div class="card-content">
@@ -306,9 +344,12 @@
 
             <!-- 新增內容: 2024 - 睪固酮濃度與男性在解尿時發出聲音的頻率與音量關聯性探討 -->
             <div class="card p-0" onclick="toggleDetails('details-2024')">
-                <div class="card-header flex flex-col items-start justify-center">
-                    <span class="text-xl">2024年 泌尿行為學獎</span>
-                    <span class="english-title">(Ig Nobel Prize in Uro-Behavioral Science)</span>
+                <div class="card-header">
+                    <img src="https://i.postimg.cc/K8zHDYk5/1753713347019.png" alt="泌尿醫學獎章" class="icon">
+                    <div class="title-group">
+                        <span class="text-xl">2024年 泌尿行為學獎</span>
+                        <span class="english-title">(Ig Nobel Prize in Uro-Behavioral Science)</span>
+                    </div>
                     <span class="text-2xl ml-auto">🗣️💧📈</span>
                 </div>
                 <div class="card-content">
@@ -346,9 +387,12 @@
 
             <!-- 新增內容: 2025 年 – 不同壓力下尿意與說謊關係之研究 -->
             <div class="card p-0" onclick="toggleDetails('details-2025')">
-                <div class="card-header flex flex-col items-start justify-center">
-                    <span class="text-xl">2025年 泌尿心理學獎</span>
-                    <span class="english-title">(Ig Nobel Prize in Uro-Psychology)</span>
+                <div class="card-header">
+                    <img src="https://i.postimg.cc/K8zHDYk5/1753713347019.png" alt="泌尿醫學獎章" class="icon">
+                    <div class="title-group">
+                        <span class="text-xl">2025年 泌尿心理學獎</span>
+                        <span class="english-title">(Ig Nobel Prize in Uro-Psychology)</span>
+                    </div>
                     <span class="text-2xl ml-auto">🤥💧</span>
                 </div>
                 <div class="card-content">
